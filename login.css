@@ -1,0 +1,140 @@
+/* CONTENEDOR PRINCIPAL */
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech&display=swap");
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #00ad17 0%, #57fc25 100%);
+  padding: 1.25rem;
+  animation: fadeIn 0.8s ease-out;
+  font-family: "Share Tech", sans-serif;
+}
+
+/* Animación suave al cargar */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* CAJA DEL FORMULARIO */
+
+.login-box {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 25rem;
+  text-align: center;
+  animation: fadeIn 1.2s ease-out;
+}
+
+.login-box h2 {
+  margin-bottom: 1.5rem;
+  color: #222;
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+
+/* INPUT GROUP */
+.input-group {
+  margin-bottom: 1.25rem;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.45rem;
+  font-weight: 600;
+  color: #444;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.85rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+  background-color: #fafafa;
+  transition: all 0.25s ease;
+}
+
+.input-group input:hover {
+  border-color: #07d311;
+}
+
+.input-group input:focus {
+  border-color: #2575fc;
+  background: #fff;
+  box-shadow: 0 0 8px rgba(37, 117, 252, 0.3);
+  outline: none;
+}
+
+/* ---------------------------- */
+/* BOTÓN */
+/* ---------------------------- */
+.login-button {
+  width: 100%;
+  padding: 0.85rem;
+  border: none;
+  border-radius: 0.4rem;
+  background-color: #176b17;
+  color: white;
+  font-size: 1.15rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 0.7rem;
+  font-weight: 600;
+}
+
+.login-button:hover {
+  background-color: #01a80180;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(37, 117, 252, 0.4);
+}
+
+.login-button:active {
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+/* RESPONSIVE MOVILES */
+@media (max-width: 600px) {
+  .login-container {
+    padding: 0;
+    background: #fff;
+    align-items: flex-start;
+    min-height: auto;
+  }
+
+  .login-box {
+    padding: 1.6rem;
+    margin-top: 2rem;
+    max-width: 100%;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .login-box h2 {
+    font-size: 1.7rem;
+    text-align: left;
+  }
+
+  .input-group input {
+    padding: 1rem;
+    font-size: 1.05rem;
+  }
+
+  .login-button {
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+}
